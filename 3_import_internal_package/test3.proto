@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package test3;
+
+import "2_multiple_files/other.proto"; // .. not allowed, set include path instead
+
+message M3 {
+    test2.Other other = 1;
+}

@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package test2;
+
+import "other.proto";
+
+message M2 {
+    Other other = 1;
+}
